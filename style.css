@@ -1,0 +1,209 @@
+/**
+* Background video
+ */
+
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: auto;
+    z-index: -100;
+}
+
+/*
+* Arktos animation
+ */
+
+.container {
+    margin-top: 8%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.container .flex-item-1 {
+    background-color: rgba(63, 127, 191, 0.2);
+    height: 100px;
+    width: 340px;
+    border: orange 4px;
+    border-right-style: solid;
+    border-left-style: solid;
+}
+
+.container .title-animation {
+    font-family: 'Orbitron', sans-serif;
+    margin-left: 20px;
+    margin-top: 20px;
+    color: #86DEFA;
+    font-size: 70px;
+    border-right: 4px solid rgba(134, 222, 250, 0.75);
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typewriter 2s steps(70) 1s 1 normal both,
+    blinkTextCursor 500ms steps(70) infinite normal;
+}
+
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+    to {
+        width: 4em;
+    }
+}
+
+@keyframes blinkTextCursor {
+    from {
+        border-right-color: rgba(134, 222, 250, 0.75);
+    }
+    to {
+        border-right-color: transparent;
+    }
+}
+
+/*
+* Spinner animation
+ */
+
+.container .half-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 70px;
+    border: 10px solid;
+    border-radius: 50%;
+    animation: loadingCircle 1.2s linear infinite;
+    border-color: #86DEFA transparent #86DEFA transparent;
+}
+
+.container .half-circle:nth-child(1) {
+    animation-delay: -0.45s;
+}
+
+@keyframes loadingCircle {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.container .half-circle .dash-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border: 10px dashed #86DEFA;
+    border-radius: 50%;
+}
+
+.container .half-circle .dash-circle .constant-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    width: 25px;
+    /*border: 3px solid #86DEFA;*/
+    border-top: 3px solid rgba(134, 222, 250, 0.2);
+    border-right: 3px solid rgba(134, 222, 250, 0.2);
+    border-bottom: 3px solid rgba(134, 222, 250, 0.2);
+    border-left: 3px solid #86DEFA;
+    border-radius: 50%;
+}
+
+.container .half-circle .dash-circle .constant-circle .dot {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #86DEFA;
+    animation: point 1s linear infinite;
+}
+
+@keyframes point {
+    from {
+        background-color: #86DEFA;
+    }
+    to {
+        background-color: transparent;
+    }
+}
+
+/**
+* Interface
+ */
+
+.container .flex-item-2 {
+    background-color: rgba(63, 127, 191, 0.2);
+    height: 400px;
+    width: 1100px;
+    border: orange 4px;
+    border-right-style: solid;
+    border-left-style: solid;
+}
+
+.container .flex-item-2 .text-container {
+    margin-top: 1%;
+}
+
+.container .flex-item-2 p.category {
+    display: inline;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 14px;
+    color: #86DEFA;
+    margin-left: 3%;
+}
+
+.container .flex-item-2 p.options {
+    display: inline;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 14px;
+    color: white;
+    margin-left: 3%;
+}
+
+.container .flex-item-2 .text-container .box-container {
+    display: flex;
+    justify-content: center;
+}
+
+.container .flex-item-2 .text-container .box-container .box-1{
+    height: 15px;
+    width: 35px;
+    transform: skew(-20deg);
+    background-color: orange;
+}
+
+.container .flex-item-2 .text-container .box-container .box-2{
+    height: 15px;
+    width: 35px;
+    margin-left: 2px;
+    transform: skew(-20deg);
+    background-color: orange;
+}
+
+.container .flex-item-2 .text-container .box-container .box-3{
+    height: 15px;
+    width: 35px;
+    margin-left: 2px;
+    transform: skew(-20deg);
+    background-color: orange;
+}
+
+.container .flex-item-2 .text-container .box-container .box-4{
+    height: 15px;
+    width: 35px;
+    margin-left: 2px;
+    transform: skew(-20deg);
+    background-color: orange;
+}
+
+.container .flex-item-2 .text-container .box-container .box-5{
+    height: 15px;
+    width: 35px;
+    margin-left: 2px;
+    transform: skew(-20deg);
+    background-color: orange;
+}
